@@ -32,12 +32,16 @@ fatal: remote origin already exists.解决办法如下：
 1、先删除远程git仓库
 
     $ git remote rm origin
-    $ git push -u origin master
+
 
 
 2、再添加远程git仓库
 
     $ git remote add origin git@github.com:WOODSBANGZHU/git_learning_notes.git
+
+    $ git push -u origin master
+
+当本地仓库文件有变化时，需要提交到github上，使用命令` git push origin master `就可以在GitHub上直接更新。
 
 git 网站中关于上传reposity的方法
 
