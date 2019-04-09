@@ -26,3 +26,25 @@
      readme.txt | 1 +
      1 file changed, 1 insertion(+)
      create mode 100644 readme.txt
+# 添加远程库
+fatal: remote origin already exists.解决办法如下：
+
+1、先删除远程git仓库
+
+    $ git remote rm origin
+    $ git push -u origin master
+
+
+2、再添加远程git仓库
+
+    $ git remote add origin git@github.com:WOODSBANGZHU/git_learning_notes.git
+
+git 网站中关于上传reposity的方法
+
+    …or create a new repository on the command line
+    echo "# git_learning_notes" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin git@github.com:WOODSBANGZHU/git_learning_notes.git
+    git push -u origin master
